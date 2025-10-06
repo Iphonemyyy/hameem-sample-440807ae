@@ -18,7 +18,7 @@ export const Services = ({ isArabic }: ServicesProps) => {
         { icon: FileText, title: "توثيق إصدار وفسخ الوكالات الشرعية" },
       ],
       legalTitle: "خدماتنا القانونية",
-      legalDesc: "نوفر في مكتب المحامي موسى النشمي الحماية القانونية للشركات المحلية والأجنبية والأفراد، ونقدم الاستشارات القانونية في مختلف المجالات. بالإضافة إلى تقديم الخدمات القانونية لقطاع الأعمال من خلال حلفاءنا الدوليين. كما نقوم بالمرافعة والمدافعة نيابة عن عملائنا في جميع المنازعات و القضايا لتغطية الحماية القانونية اللازمة للجميع.",
+      legalDesc: "نوفر في مكتب المحامي فيصل الغامدي الحماية القانونية للشركات المحلية والأجنبية والأفراد، ونقدم الاستشارات القانونية في مختلف المجالات. بالإضافة إلى تقديم الخدمات القانونية لقطاع الأعمال من خلال حلفاءنا الدوليين. كما نقوم بالمرافعة والمدافعة نيابة عن عملائنا في جميع المنازعات و القضايا لتغطية الحماية القانونية اللازمة للجميع.",
       legalServices: [
         { icon: Building, title: "تأسيس وتسجيل الشركات" },
         { icon: Gavel, title: "القضايا الجنائية" },
@@ -80,6 +80,8 @@ export const Services = ({ isArabic }: ServicesProps) => {
                 <Card
                   key={index}
                   className="border-primary/20 bg-card transition-all hover:scale-105 hover:border-primary"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
                 >
                   <CardContent className="flex flex-col items-center p-6 text-center">
                     <div className="mb-4 rounded-full bg-primary/10 p-4">
@@ -106,6 +108,8 @@ export const Services = ({ isArabic }: ServicesProps) => {
                 <Card
                   key={index}
                   className="border-primary/20 bg-card transition-all hover:scale-105 hover:border-primary"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
                 >
                   <CardContent className="flex flex-col items-center p-6 text-center">
                     <div className="mb-4 rounded-full bg-primary/10 p-4">

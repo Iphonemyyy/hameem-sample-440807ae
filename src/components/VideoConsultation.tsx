@@ -9,7 +9,7 @@ export const VideoConsultation = ({ isArabic }: VideoConsultationProps) => {
   const content = {
     ar: {
       title: "استشارات مرئية",
-      description: `رغبة منا في المساهمة في نشر الوعي والثقافة القانونية، وتعريف أفراد المجتمع سواء من قطاع الأعمال أو الأفراد بالخدمات القانونية التي تقدمها وزارة العدل، فمنا في مكتب المحامي والموثق موسى النشمي بإصدار مجموعة من المقاطع المرئية التي تسهل إيصال الفكرة خلال نوانٍ محدودة وبدون عناء البحث والقراءة المطولة.`,
+      description: `رغبة منا في المساهمة في نشر الوعي والثقافة القانونية، وتعريف أفراد المجتمع سواء من قطاع الأعمال أو الأفراد بالخدمات القانونية التي تقدمها وزارة العدل، فمنا في مكتب المحامي والموثق فيصل الغامدي بإصدار مجموعة من المقاطع المرئية التي تسهل إيصال الفكرة خلال نوانٍ محدودة وبدون عناء البحث والقراءة المطولة.`,
       videoTitle: "التوثيق خلال الإجازات والسفر",
     },
     en: {
@@ -40,7 +40,7 @@ export const VideoConsultation = ({ isArabic }: VideoConsultationProps) => {
             {text.description}
           </p>
 
-          <Card className="overflow-hidden border-primary/20 bg-card">
+          <Card className="overflow-hidden border-primary/20 bg-card" data-aos="scale-in">
             <CardContent className="p-0">
               <div className="group relative aspect-video bg-muted">
                 <div className="absolute inset-0 flex items-center justify-center bg-black/50 transition-all group-hover:bg-black/40">
