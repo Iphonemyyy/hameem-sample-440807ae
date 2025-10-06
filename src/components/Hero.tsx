@@ -64,7 +64,7 @@ export const Hero = ({ isArabic }: HeroProps) => {
               size="lg"
               variant="outline"
               className="border-primary px-8 py-6 text-lg font-semibold text-foreground hover:bg-primary/20"
-              onClick={() => window.open("https://wa.me/0555822339", "_blank")}
+              onClick={() => window.open("https://wa.me/0546122809", "_blank")}
             >
               {text.cta2}
             </Button>
