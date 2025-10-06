@@ -55,7 +55,7 @@ export const Navigation = ({ isArabic, onToggleLanguage }: NavigationProps) => {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           <div className="text-2xl font-bold text-primary">
-            {isArabic ? "فيصل الغامدي" : "Faisal Alghamdi"}
+            {isArabic ? "موسى النشمي" : "Musa Alnashmi"}
           </div>
 
           <div className="hidden items-center gap-8 md:flex">

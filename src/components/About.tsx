@@ -7,13 +7,13 @@ interface AboutProps {
 export const About = ({ isArabic }: AboutProps) => {
   const content = {
     ar: {
-      title: "المحامي والموثق فيصل الغامدي",
-      description: `يقوم مكتب المحامي والموثق فيصل الغامدي للمحاماة والاستشارات الشرعية والقانونية منذ تأسيسه وحتى الآن بدور فعال في تقديم النجح والمشورة في كافة المجالات القانونية والشرعية المرتبطة بالشركات والمؤسسات وحتى الأفراد بتوفير الحماية القانونية لهم من خلال نخبة من المحامين والمستشارين من ذوي الكفاءة والخبرة من الناحية العلمية والعملية.
+      title: "المحامي والموثق موسى النشمي",
+      description: `يقوم مكتب المحامي والموثق موسى النشمي للمحاماة والاستشارات الشرعية والقانونية منذ تأسيسه وحتى الآن بدور فعال في تقديم النجح والمشورة في كافة المجالات القانونية والشرعية المرتبطة بالشركات والمؤسسات وحتى الأفراد بتوفير الحماية القانونية لهم من خلال نخبة من المحامين والمستشارين من ذوي الكفاءة والخبرة من الناحية العلمية والعملية.
 
 كما نسعى إلى توفير الحماية القانونية للشركات المحلية والأجنبية والأفراد وتقديم الاستشارات في مختلف المجالات القانونية.`,
     },
     en: {
-      title: "Lawyer & Notary Faisal Alghamdi",
+      title: "Lawyer & Notary Musa Alnashmi",
       description: `Our office provides legal and Sharia consultation for companies and individuals with a team of experienced lawyers and consultants. Since its establishment, we have been providing successful legal representation and advice in all legal and Sharia fields related to companies, institutions, and individuals by providing legal protection through a team of competent and experienced lawyers and consultants from both academic and practical perspectives.
 
 We also strive to provide legal protection for local and foreign companies and individuals and provide consultations in various legal fields.`,
