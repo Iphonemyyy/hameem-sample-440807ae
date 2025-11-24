@@ -1,5 +1,6 @@
-import { FileText, Home, Shield, Building, Scale, Briefcase, Users, Gavel } from "lucide-react";
+import { FileText, Home, Shield, Building, Scale, Briefcase, Users, Gavel, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
 
 interface ServicesProps {
   isArabic: boolean;
@@ -23,32 +24,38 @@ export const Services = ({ isArabic }: ServicesProps) => {
         { 
           icon: Building, 
           title: "تأسيس وتسجيل الشركات",
-          description: "نساعدك في تأسيس شركتك وتسجيلها وفق الأنظمة السعودية، مع تقديم الاستشارات القانونية اللازمة لاختيار الشكل القانوني المناسب."
+          description: "نساعدك في تأسيس شركتك وتسجيلها وفق الأنظمة السعودية، مع تقديم الاستشارات القانونية اللازمة لاختيار الشكل القانوني المناسب.",
+          whatsappMessage: "مرحباً، أود الاستفسار عن خدمات تأسيس وتسجيل الشركات"
         },
         { 
           icon: Gavel, 
           title: "القضايا الجنائية",
-          description: "نمثل موكلينا في القضايا الجنائية ونقدم الدفاع القانوني الكامل أمام المحاكم الجزائية وفق الأنظمة الشرعية."
+          description: "نمثل موكلينا في القضايا الجنائية ونقدم الدفاع القانوني الكامل أمام المحاكم الجزائية وفق الأنظمة الشرعية.",
+          whatsappMessage: "مرحباً، أود الاستفسار عن خدمات القضايا الجنائية"
         },
         { 
           icon: Home, 
           title: "القضايا العقارية",
-          description: "نتولى كافة القضايا المتعلقة بالعقارات من نزاعات الملكية والإيجارات والتعويضات العقارية."
+          description: "نتولى كافة القضايا المتعلقة بالعقارات من نزاعات الملكية والإيجارات والتعويضات العقارية.",
+          whatsappMessage: "مرحباً، أود الاستفسار عن خدمات القضايا العقارية"
         },
         { 
           icon: Scale, 
           title: "القضايا المدنية",
-          description: "نقدم الخدمات القانونية في القضايا المدنية بما في ذلك التعويضات والعقود والمنازعات المدنية."
+          description: "نقدم الخدمات القانونية في القضايا المدنية بما في ذلك التعويضات والعقود والمنازعات المدنية.",
+          whatsappMessage: "مرحباً، أود الاستفسار عن خدمات القضايا المدنية"
         },
         { 
           icon: Briefcase, 
           title: "القضايا التجارية",
-          description: "نتعامل مع المنازعات التجارية وقضايا الشركات والعقود التجارية والإفلاس والتصفية."
+          description: "نتعامل مع المنازعات التجارية وقضايا الشركات والعقود التجارية والإفلاس والتصفية.",
+          whatsappMessage: "مرحباً، أود الاستفسار عن خدمات القضايا التجارية"
         },
         { 
           icon: Users, 
           title: "القضايا العمالية",
-          description: "نمثل أصحاب العمل والموظفين في النزاعات العمالية ونقدم الاستشارات المتعلقة بقانون العمل السعودي."
+          description: "نمثل أصحاب العمل والموظفين في النزاعات العمالية ونقدم الاستشارات المتعلقة بقانون العمل السعودي.",
+          whatsappMessage: "مرحباً، أود الاستفسار عن خدمات القضايا العمالية"
         },
       ],
     },
@@ -68,32 +75,38 @@ export const Services = ({ isArabic }: ServicesProps) => {
         { 
           icon: Building, 
           title: "Company Formation & Registration",
-          description: "We help you establish and register your company according to Saudi regulations, providing legal consultation for choosing the appropriate legal structure."
+          description: "We help you establish and register your company according to Saudi regulations, providing legal consultation for choosing the appropriate legal structure.",
+          whatsappMessage: "Hello, I would like to inquire about company formation and registration services"
         },
         { 
           icon: Gavel, 
           title: "Criminal Cases",
-          description: "We represent our clients in criminal cases and provide full legal defense before criminal courts in accordance with Sharia regulations."
+          description: "We represent our clients in criminal cases and provide full legal defense before criminal courts in accordance with Sharia regulations.",
+          whatsappMessage: "Hello, I would like to inquire about criminal case services"
         },
         { 
           icon: Home, 
           title: "Real Estate Cases",
-          description: "We handle all real estate-related cases including ownership disputes, leases, and real estate compensation."
+          description: "We handle all real estate-related cases including ownership disputes, leases, and real estate compensation.",
+          whatsappMessage: "Hello, I would like to inquire about real estate case services"
         },
         { 
           icon: Scale, 
           title: "Civil Cases",
-          description: "We provide legal services in civil cases including compensation, contracts, and civil disputes."
+          description: "We provide legal services in civil cases including compensation, contracts, and civil disputes.",
+          whatsappMessage: "Hello, I would like to inquire about civil case services"
         },
         { 
           icon: Briefcase, 
           title: "Commercial Cases",
-          description: "We deal with commercial disputes, corporate cases, commercial contracts, bankruptcy, and liquidation."
+          description: "We deal with commercial disputes, corporate cases, commercial contracts, bankruptcy, and liquidation.",
+          whatsappMessage: "Hello, I would like to inquire about commercial case services"
         },
         { 
           icon: Users, 
           title: "Labor Cases",
-          description: "We represent employers and employees in labor disputes and provide consultations related to Saudi labor law."
+          description: "We represent employers and employees in labor disputes and provide consultations related to Saudi labor law.",
+          whatsappMessage: "Hello, I would like to inquire about labor case services"
         },
       ],
     },
@@ -171,10 +184,23 @@ export const Services = ({ isArabic }: ServicesProps) => {
                     </CardContent>
                     
                     {/* Back */}
-                    <CardContent className="absolute inset-0 flex items-center justify-center p-6 text-center backface-hidden rotate-y-180 bg-primary/5">
+                    <CardContent className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-6 text-center backface-hidden rotate-y-180 bg-primary/5">
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         {service.description}
                       </p>
+                      <Button
+                        asChild
+                        className="bg-green-500 hover:bg-green-600 text-white gap-2"
+                      >
+                        <a
+                          href={`https://wa.me/0546122809?text=${encodeURIComponent(service.whatsappMessage)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <MessageCircle className="h-4 w-4" />
+                          {isArabic ? "تواصل عبر واتساب" : "Contact via WhatsApp"}
+                        </a>
+                      </Button>
                     </CardContent>
                   </div>
                 </Card>
