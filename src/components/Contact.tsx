@@ -177,8 +177,8 @@ export const Contact = ({ isArabic }: ContactProps) => {
                 <p className="mb-6 text-muted-foreground">{text.bookingDesc}</p>
                 <div className="flex items-center gap-3 text-xl font-bold text-foreground">
                   <Phone className="h-6 w-6 text-primary" />
-                  <a href="tel:0546122809" className="hover:text-primary">
-                    0546122809
+                  <a href="tel:0512345678" className="hover:text-primary">
+                    0512345678
                   </a>
                 </div>
               </CardContent>

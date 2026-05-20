@@ -193,7 +193,7 @@ export const Services = ({ isArabic }: ServicesProps) => {
                         className="bg-green-500 hover:bg-green-600 text-white gap-2"
                       >
                         <a
-                          href={`https://wa.me/0546122809?text=${encodeURIComponent(service.whatsappMessage)}`}
+                          href={`https://wa.me/0512345678?text=${encodeURIComponent(service.whatsappMessage)}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
